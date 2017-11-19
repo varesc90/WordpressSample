@@ -123,7 +123,7 @@ function twentysixteen_setup() {
 	 * specifically font, colors, icons, and column width.
 	 */
 	add_editor_style( array( 'css/editor-style.css', twentysixteen_fonts_url() ) );
-	add_styles_from_css_folder('mvcshowcase');
+	add_mvc_styles();
 	// Indicate widget sidebars can use selective refresh in the Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
@@ -420,6 +420,21 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
+
+
+
+
+function add_mvc_styles()
+{
+
+    $page_slug = trim( $_SERVER["REQUEST_URI"] , '/' );
+    if(!$page_slug)
+    {
+        add_styles_from_css_folder('mvc-home');
+    }else{
+        add_styles_from_css_folder('mvc-' . $page_slug);
+    }
+}
 
 function add_styles_from_css_folder($name)
 {
