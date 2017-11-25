@@ -1,7 +1,49 @@
+html {
+  background-color: #f5f5f5; }
+  html body {
+    padding: 0;
+    width: 960px;
+    margin: 0 auto;
+    background: #ffffff; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #258efb; }
 
 li {
   list-style-type: none; }
+
+#site-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff; }
+
+#content {
+  clear: both; }
+
+.site-branding {
+  width: 240px; }
+
+.site-header {
+  overflow: auto; }
+  .site-header * {
+    float: left; }
+
+#menu-home {
+  width: 720px; }
+  #menu-home li {
+    width: 90px;
+    margin: 28px 5px;
+    text-align: center; }
+    #menu-home li a {
+      float: none; }
+
+.site-header-main {
+  width: 100%; }
+
+#site-header-menu {
+  width: 500px;
+  float: right; }
 
 /*# sourceMappingURL=mvc-home.css.map */

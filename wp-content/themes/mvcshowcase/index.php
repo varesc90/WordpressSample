@@ -13,10 +13,11 @@
  * @subpackage Twenty_Sixteen
  * @since Twenty Sixteen 1.0
  */
-
-get_header();
 ?>
 
+
+<div id="site-container">
+    <?php get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -61,3 +62,4 @@ get_header();
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+</div>

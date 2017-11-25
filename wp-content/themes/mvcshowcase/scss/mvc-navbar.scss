@@ -1,0 +1,38 @@
+.site-branding
+{
+  width:240px;
+}
+
+
+.site-header{
+  overflow:auto;
+  *{float:left;}
+}
+
+
+
+#menu-home
+{
+  width:720px;
+  li{
+    width: 90px;
+    margin: 28px 5px;
+    text-align: center;
+    a{
+      float:none;
+    }
+  }
+}
+
+
+.site-header-main
+{
+  width:100%;
+}
+
+
+
+#site-header-menu{
+  width:500px;
+  float:right;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cACA;EACE,KAAK,EAAC,KAAK;;AAIb,SAAS;EACP,KAAK,EAAC,IAAI",
+"sources": ["../scss/mvc-navbar.scss"],
+"names": [],
+"file": "mvc-navbar.css"
+}
