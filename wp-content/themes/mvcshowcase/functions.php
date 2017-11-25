@@ -124,6 +124,7 @@ function twentysixteen_setup() {
 	 */
 	add_editor_style( array( 'css/editor-style.css', twentysixteen_fonts_url() ) );
 	add_mvc_styles();
+	add_action('admin_enqueue_scripts', 'add_customized_admin_style');
 	// Indicate widget sidebars can use selective refresh in the Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
@@ -426,12 +427,10 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
 function add_mvc_styles()
 {
-
+	add_styles_from_css_folder('mvc-home');
     $page_slug = trim( $_SERVER["REQUEST_URI"] , '/' );
-    if(!$page_slug)
+    if($page_slug)
     {
-        add_styles_from_css_folder('mvc-home');
-    }else{
         add_styles_from_css_folder('mvc-' . $page_slug);
     }
 }
@@ -440,3 +439,11 @@ function add_styles_from_css_folder($name)
 {
     wp_enqueue_style( $name, get_template_directory_uri() . '/css/'.$name.'.css',false,'1.1','all');
 }
+
+function add_customized_admin_style()
+{
+	wp_enqueue_style( 'mvc-home', get_template_directory_uri() . '/css/mvc-home.css',false,'1.1','all');
+}
+
+
+

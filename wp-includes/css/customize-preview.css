@@ -5,6 +5,8 @@
 	cursor: progress;
 }
 
+
+
 /* Override highlight when refreshing */
 .customize-partial-refreshing.widget-customizer-highlighted-widget {
 	-webkit-box-shadow: none;
