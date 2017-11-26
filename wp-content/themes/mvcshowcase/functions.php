@@ -431,6 +431,7 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 function add_mvc_styles()
 {
 	add_styles_from_css_folder('mvc-home');
+	wp_enqueue_script( 'mvc-home', get_template_directory_uri() . '/js/mvc-home.js');
     $page_slug = trim( $_SERVER["REQUEST_URI"] , '/' );
     if($page_slug)
     {

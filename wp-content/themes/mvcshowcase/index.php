@@ -23,34 +23,6 @@ $loop = new WP_Query( $args );
 
 <div id="site-container">
 
-<style>
-    .pagination {
-        margin:26px auto 0;
-        width:100px;
-    }
-
-    .pagination li {
-        float:left;
-        margin:0 1px;
-        list-style:none;
-    }
-
-    .pagination li a {
-        display:block;
-        width:12px;
-        height:0;
-        padding-top:12px;
-        background-image:url(../img/pagination.png);
-        background-position:0 0;
-        float:left;
-        overflow:hidden;
-    }
-
-    .pagination li.current a {
-        background-position:0 -12px;
-    }
-</style>
-
 
 
 
@@ -70,7 +42,16 @@ $loop = new WP_Query( $args );
         endwhile;
         ?>
     </div>
-	<div id="primary" class="content-area">
+
+
+	<?php
+
+	$description = get_bloginfo( 'description', 'display' );
+	if ( $description || is_customize_preview() ) : ?>
+        <p class="site-description"><?php echo $description; ?></p>
+	<?php endif; ?>
+
+    <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -114,5 +95,7 @@ $loop = new WP_Query( $args );
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+    <script>
 
+    </script>
 </div>
