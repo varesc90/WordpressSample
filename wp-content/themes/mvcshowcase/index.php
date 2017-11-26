@@ -13,21 +13,62 @@
  * @subpackage Twenty_Sixteen
  * @since Twenty Sixteen 1.0
  */
+
+$args = array( 'post_type' => 'banners', 'posts_per_page' => 5 );
+$loop = new WP_Query( $args );
 ?>
+
+
 
 
 <div id="site-container">
 
+<style>
+    .pagination {
+        margin:26px auto 0;
+        width:100px;
+    }
 
+    .pagination li {
+        float:left;
+        margin:0 1px;
+        list-style:none;
+    }
+
+    .pagination li a {
+        display:block;
+        width:12px;
+        height:0;
+        padding-top:12px;
+        background-image:url(../img/pagination.png);
+        background-position:0 0;
+        float:left;
+        overflow:hidden;
+    }
+
+    .pagination li.current a {
+        background-position:0 -12px;
+    }
+</style>
 
 
 
 
 
     <?php get_header();
+
+
     ?>
 
+
+
     <div id="site-banner">
+        <?php while ( $loop->have_posts() ) : $loop->the_post();
+        echo '<div class="entry-content">';
+            the_content();
+            echo '</div>';
+        endwhile;
+        ?>
     </div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -73,4 +114,5 @@
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
 </div>
