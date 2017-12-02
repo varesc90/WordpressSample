@@ -45,6 +45,7 @@ if ( ! function_exists( 'twentysixteen_setup' ) ) :
  * @since Twenty Sixteen 1.0
  */
 function twentysixteen_setup() {
+	add_action('init','add_google_font');
 	wp_enqueue_script( 'slides', get_template_directory_uri() . '/js/jquery.slides.min.js');
 	add_action( 'init', 'create_post_type' );
 	/*
@@ -445,24 +446,18 @@ function add_styles_from_css_folder($name)
 
 }
 
+function add_google_font()
+{
+	echo '<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">';
+}
+
 function add_customized_admin_style()
 {
 	wp_enqueue_style( 'mvc-home', get_template_directory_uri() . '/css/mvc-home.css',false,'1.1','all');
 }
 
 
-function create_post_type() {
-	register_post_type( 'banners',
-		array(
-			'labels' => array(
-				'name' => __( 'Banners' ),
-				'singular_name' => __( 'Banner' )
-			),
-			'public' => true,
-			'has_archive' => true,
-		)
-	);
-}
+
 
 
 

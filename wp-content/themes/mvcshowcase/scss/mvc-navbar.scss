@@ -1,11 +1,16 @@
 .site-branding
 {
-  width:240px;
+  position: fixed;
+  top:5em;
+  left:10em;
+  z-index:9999;
 }
 
 
 .site-header{
   overflow:auto;
+  height:5em;
+  padding: 2em 10em 0em 10em;
   *{float:left;}
 }
 
@@ -13,7 +18,6 @@
 
 #menu-home
 {
-  width:720px;
   li{
     width: 90px;
     margin: 28px 5px;
@@ -33,7 +37,6 @@
 
 
 #site-header-menu{
-  width:500px;
   float:right;
 }
 

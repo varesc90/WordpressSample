@@ -28,11 +28,7 @@
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
-				<div class="site-branding">
-					<?php twentysixteen_the_custom_logo(); ?>
-
-
-				</div><!-- .site-branding -->
+				<!-- .site-branding -->
 
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 
@@ -73,5 +69,7 @@
 				</div><!-- .header-image -->
 			<?php endif; // End header image check. ?>
 		</header><!-- .site-header -->
-
+        <div class="site-branding">
+			<?php twentysixteen_the_custom_logo(); ?>
+        </div>
 		<div id="content" class="site-content">

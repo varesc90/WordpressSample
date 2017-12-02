@@ -27,21 +27,14 @@ $loop = new WP_Query( $args );
 
 
 
-    <?php get_header();
+	<?php get_header();
 
 
-    ?>
+	?>
 
 
 
-    <div id="site-banner">
-        <?php while ( $loop->have_posts() ) : $loop->the_post();
-        echo '<div class="entry-content">';
-            the_content();
-            echo '</div>';
-        endwhile;
-        ?>
-    </div>
+
 
 
 	<?php
@@ -52,50 +45,44 @@ $loop = new WP_Query( $args );
 	<?php endif; ?>
 
     <div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+        <main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+				<?php if ( is_home() && ! is_front_page() ) : ?>
+                    <header>
+                        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                    </header>
+				<?php endif; ?>
 
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post();
+				<?php
+				// Start the loop.
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				$args = array( 'numberposts' => '5' );
+				$recent_posts = wp_get_recent_posts( $args );
+				$post_index = 1;
+				?>
+				<?php foreach($recent_posts as $post):?>
+                    <div id="home-post-<?php echo $post_index;?>-container">
+                        <div class="homepage-post" id="home-post-<?php echo $post_index;?>">
+	                        <?php echo get_the_post_thumbnail( $post['ID']); ?>
+                            <h2 class="post_title"><?php echo $post['post_title'];?></h2>
+                        </div>
+                    </div>
+				<?php
+                    $post_index++;
+                    endforeach
+                ;?>
+                <!--                // If no content, include the "No posts found" template.-->
+			<?php else :?>
+                //something to show when there's no post
+			<?php endif;?>
+    </div>
 
-			// End the loop.
-			endwhile;
+    </main><!-- .site-main -->
+</div><!-- .content-area -->
 
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
+<script>
 
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
-    <script>
-
-    </script>
+</script>
 </div>

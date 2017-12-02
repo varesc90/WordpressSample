@@ -1,9 +1,10 @@
 html
 {
+  font-family: 'Montserrat', sans-serif;
+  margin:0px !important;
   background-color:#f5f5f5;
   body {
     padding: 0;
-    width:960px;
     margin:0 auto;
     background:#ffffff;
   }
@@ -20,7 +21,6 @@ li{
 
 #site-container
 {
-  width:960px;
   margin:0 auto;
   padding:20px;
   background:#ffffff;
@@ -30,4 +30,10 @@ li{
 #content
 {
   clear:both;
+}
+
+.hidden
+{
+  transition:display 2s;
+  display:none !important;
 }

@@ -1,19 +1,12 @@
 $( document ).ready(function() {
 
 
-    $(function(){
-        $("#site-banner").slidesjs({
-
-            width: 960,
-            height: 300,
-            play: {
-                active: true,
-                auto: true,
-                interval: 4000,
-                swap: true
-            },
-
-        });
-    });
-
+    $('.homepage-post').hover(function(){
+            $(this).find('img').toggleClass('hovered');
+            $(this).find('.post_title').fadeIn(300);
+        },function(){
+        $(this).find('.post_title').fadeOut(300);
+            $(this).find('img').toggleClass('hovered');
+        }
+    );
 });
