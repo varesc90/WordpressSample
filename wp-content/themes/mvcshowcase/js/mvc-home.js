@@ -13,6 +13,6 @@ jQuery(document).ready(function($) {
 
 function homepageAnimate()
 {
-    $('.site-main').animate({'padding-top':'15em','opacity':'1'});
+    $('.site-main').animate({'padding-top':'0em','opacity':'1'});
 }
 });

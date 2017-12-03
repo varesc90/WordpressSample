@@ -14,7 +14,6 @@
  * @since Twenty Sixteen 1.0
  */
 
-$args = array( 'post_type' => 'banners', 'posts_per_page' => 5 );
 $loop = new WP_Query( $args );
 ?>
 

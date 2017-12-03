@@ -26,7 +26,6 @@
 <div id="page" class="site">
     <div class="site-inner">
 
-        <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
 		        <?php twentysixteen_the_custom_logo(); ?>
             </div>
@@ -34,6 +33,5 @@
                 <a href="">Hamburger</a>
                 <a href="">+</a>
             </div>
-        </header><!-- .site-header -->
 
             <div id="content" class="site-content">

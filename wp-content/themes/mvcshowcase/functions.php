@@ -457,6 +457,23 @@ function add_customized_admin_style()
 	wp_enqueue_style( 'mvc-home', get_template_directory_uri() . '/css/mvc-home.css',false,'1.1','all');
 }
 
+function create_posttype() {
+
+	register_post_type( 'Homepage Post',
+		// CPT Options
+		array(
+			'labels' => array(
+				'name' => __( 'Homepage Posts' ),
+				'singular_name' => __( 'Homepage Post' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'homepage_post'),
+		)
+	);
+}
+
+add_action( 'init', 'create_posttype' );
 
 
 

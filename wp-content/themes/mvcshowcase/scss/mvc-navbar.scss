@@ -3,27 +3,19 @@
 
   z-index:9999;
   float:left;
-  margin-left:5em;
+  margin:5em;
 }
 
 
-.site-header{
-  position:fixed;
-  overflow:auto;
-  height:6em;
-  padding:2em;
-  z-index:9999;
-
-  width:100%;
   .right-nav
   {
     float:right;
-    margin:3em 5em;
+    margin:8em;
     a{
       margin:1em;
     }
   }
-}
+
 
 
 
