@@ -1,5 +1,4 @@
-$( document ).ready(function() {
-
+jQuery(document).ready(function($) {
 
     $('.homepage-post').hover(function(){
             $(this).find('img').toggleClass('hovered');

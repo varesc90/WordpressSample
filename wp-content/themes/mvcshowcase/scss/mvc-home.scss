@@ -2,7 +2,10 @@
 @import 'mvc-navbar';
 
 
-
+.site-main
+{
+  padding-top:15em;
+}
 .homepage-post
 {
   cursor:pointer;
@@ -37,7 +40,6 @@
   width: 100%;
 
   #home-post-2 {
-    padding:0em 15em;
     width: 30%;
     float:left;
   }
@@ -85,6 +87,8 @@
   display:none;
   font-weight:300;
 }
+
+
 img.hovered
 {
   transition: opacity 0.5s;
