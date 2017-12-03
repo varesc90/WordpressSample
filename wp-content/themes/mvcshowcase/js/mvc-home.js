@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+    homepageAnimate();
+
     $('.homepage-post').hover(function(){
             $(this).find('img').toggleClass('hovered');
             $(this).find('.post_title').fadeIn(300);
@@ -8,4 +10,9 @@ jQuery(document).ready(function($) {
             $(this).find('img').toggleClass('hovered');
         }
     );
+
+function homepageAnimate()
+{
+    $('.site-main').animate({'padding-top':'15em','opacity':'1'});
+}
 });

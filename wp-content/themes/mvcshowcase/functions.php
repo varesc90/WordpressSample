@@ -45,7 +45,7 @@ if ( ! function_exists( 'twentysixteen_setup' ) ) :
  * @since Twenty Sixteen 1.0
  */
 function twentysixteen_setup() {
-	add_action('init','add_google_font');
+
 	wp_enqueue_script( 'slides', get_template_directory_uri() . '/js/jquery.slides.min.js');
 	add_action( 'init', 'create_post_type' );
 	/*
@@ -126,6 +126,7 @@ function twentysixteen_setup() {
 	 * specifically font, colors, icons, and column width.
 	 */
 	add_editor_style( array( 'css/editor-style.css', twentysixteen_fonts_url() ) );
+	add_google_font();
 	add_mvc_styles();
 	add_action('admin_enqueue_scripts', 'add_customized_admin_style');
 	// Indicate widget sidebars can use selective refresh in the Customizer.
