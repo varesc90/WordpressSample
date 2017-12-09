@@ -30,8 +30,8 @@
 		        <?php twentysixteen_the_custom_logo(); ?>
             </div>
             <div class="right-nav">
-                <a href="">Hamburger</a>
-                <a href="">+</a>
+                <a id="nav-hamburger" href=""><i class="fa fa-th-list" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-plus"></i></a>
             </div>
 
             <div id="content" class="site-content">

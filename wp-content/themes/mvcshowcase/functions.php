@@ -439,6 +439,7 @@ function add_mvc_styles()
     {
         add_styles_from_css_folder('mvc-' . $page_slug);
     }
+	echo '<link rel="stylesheet" href="'.get_template_directory_uri().'/css/fontawesome-all.css">';
 }
 
 function add_styles_from_css_folder($name)

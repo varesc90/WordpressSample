@@ -4,13 +4,15 @@
   z-index:9999;
   float:left;
   margin:5em;
+  position:fixed;
 }
 
 
   .right-nav
   {
-    float:right;
-    margin:8em;
+    position: fixed;
+    right: 5em;
+    top: 8em;
     a{
       margin:1em;
     }

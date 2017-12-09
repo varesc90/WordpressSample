@@ -11,6 +11,27 @@ jQuery(document).ready(function($) {
         }
     );
 
+
+
+    $('#nav-hamburger').on('click',function(e){
+        e.preventDefault();
+        var hamburger = $(this);
+        if(!hamburger.hasClass('active'))
+        {
+            $('#content').fadeOut('slow', function () {
+                hamburger.html('<i class="fa fa-times" aria-hidden="true"></i>');
+                hamburger.addClass('active');
+            });
+        }else{
+            $('#content').fadeIn('slow',function(){});
+            hamburger.html('<i class="fa fa-th-list" aria-hidden="true"></i>');
+            hamburger.removeClass('active');
+        }
+    });
+
+
+
+
 function homepageAnimate()
 {
     $('.site-main').animate({'padding-top':'0em','opacity':'1'});
