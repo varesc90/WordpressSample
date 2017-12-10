@@ -438,7 +438,7 @@ function add_mvc_styles()
     {
         add_styles_from_css_folder('mvc-' . $page_slug);
     }
-	echo '<link rel="stylesheet" href="'.get_template_directory_uri().'/css/fontawesome-all.css">';
+	wp_enqueue_style( 'fontawesome-all', get_template_directory_uri() . '/css/fontawesome-all.css',false,'1.1','all');
 }
 
 function add_styles_from_css_folder($name)

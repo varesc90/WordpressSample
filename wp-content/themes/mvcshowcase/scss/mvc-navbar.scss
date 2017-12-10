@@ -3,16 +3,13 @@
 
   z-index:9999;
   float:left;
-  margin:5em;
-  position:fixed;
 }
 
 
   .right-nav
   {
-    position: fixed;
-    right: 5em;
-    top: 8em;
+    float: right;
+    margin-top:3em;
     a{
       margin:1em;
     }
@@ -48,4 +45,18 @@
 #site-banner {
   height: 300px;
   width: 100%;
+}
+
+#nav-bar
+{
+  overflow:auto;
+  position:fixed;
+  width: 80%;
+  margin: 3em 10%;
+  z-index:10;
+
+}
+
+#dropdown{
+  clear:both;
 }

@@ -21,13 +21,26 @@ jQuery(document).ready(function($) {
             $('#content').fadeOut('slow', function () {
                 hamburger.html('<i class="fa fa-times" aria-hidden="true"></i>');
                 hamburger.addClass('active');
+                $('#dropdown').fadeIn('slow',function(){
+
+                });
             });
         }else{
-            $('#content').fadeIn('slow',function(){});
-            hamburger.html('<i class="fa fa-th-list" aria-hidden="true"></i>');
-            hamburger.removeClass('active');
+            $('#dropdown').fadeOut('slow',function(){
+                $('#content').fadeIn('slow',function(){});
+                hamburger.html('<i class="fa fa-th-list" aria-hidden="true"></i>');
+                hamburger.removeClass('active');
+            });
+
         }
     });
+
+    $('#category_list a').hover(
+        function(){
+            $('#category_description img').attr('src',$(this).data('image'));
+        },function(){
+            $('#category_description img').attr('src','');
+        });
 
 
 

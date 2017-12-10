@@ -31,14 +31,11 @@ li {
 
 .site-branding {
   z-index: 9999;
-  float: left;
-  margin: 5em;
-  position: fixed; }
+  float: left; }
 
 .right-nav {
-  position: fixed;
-  right: 5em;
-  top: 8em; }
+  float: right;
+  margin-top: 3em; }
   .right-nav a {
     margin: 1em; }
 
@@ -58,6 +55,16 @@ li {
 #site-banner {
   height: 300px;
   width: 100%; }
+
+#nav-bar {
+  overflow: auto;
+  position: fixed;
+  width: 80%;
+  margin: 3em 10%;
+  z-index: 10; }
+
+#dropdown {
+  clear: both; }
 
 .site-main {
   padding-top: 30em;
@@ -123,5 +130,15 @@ li {
 img.hovered {
   transition: opacity 0.5s;
   opacity: 0.1 !important; }
+
+#dropdown {
+  display: none;
+  height: 500px; }
+  #dropdown #category_list {
+    width: 40%;
+    padding-left: 20%; }
+    #dropdown #category_list li {
+      padding: 1em 0;
+      font-size: 20px; }
 
 /*# sourceMappingURL=mvc-home.css.map */

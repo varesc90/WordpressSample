@@ -43,6 +43,7 @@ $loop = new WP_Query( $args );
         <p class="site-description"><?php echo $description; ?></p>
 	<?php endif; ?>
 
+
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 

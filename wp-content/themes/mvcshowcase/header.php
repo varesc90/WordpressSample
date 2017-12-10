@@ -26,6 +26,7 @@
 <div id="page" class="site">
     <div class="site-inner">
 
+        <div id="nav-bar">
             <div class="site-branding">
 		        <?php twentysixteen_the_custom_logo(); ?>
             </div>
@@ -33,5 +34,7 @@
                 <a id="nav-hamburger" href=""><i class="fa fa-th-list" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-plus"></i></a>
             </div>
-
+            <?php echo get_dropdown();?>
+        </div>
             <div id="content" class="site-content">
+

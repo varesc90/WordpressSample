@@ -95,3 +95,19 @@ img.hovered
   transition: opacity 0.5s;
   opacity:0.1 !important;
 }
+
+#dropdown
+{
+  #category_list
+  {
+    width: 40%;
+    padding-left: 20%;
+    li{
+      padding: 1em 0;
+      font-size:20px;
+    }
+  }
+  display:none;
+  height: 500px;
+
+}
