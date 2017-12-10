@@ -126,7 +126,6 @@ function twentysixteen_setup() {
 	 * specifically font, colors, icons, and column width.
 	 */
 	add_editor_style( array( 'css/editor-style.css', twentysixteen_fonts_url() ) );
-	add_google_font();
 	add_mvc_styles();
 	add_action('admin_enqueue_scripts', 'add_customized_admin_style');
 	// Indicate widget sidebars can use selective refresh in the Customizer.
@@ -448,10 +447,6 @@ function add_styles_from_css_folder($name)
 
 }
 
-function add_google_font()
-{
-	echo '<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">';
-}
 
 function add_customized_admin_style()
 {
