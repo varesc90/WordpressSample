@@ -37,9 +37,11 @@ jQuery(document).ready(function($) {
 
     $('#category_list a').hover(
         function(){
-            $('#category_description img').attr('src',$(this).data('image'));
+                var id = $(this).data('id');
+                $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},1000);
         },function(){
-            $('#category_description img').attr('src','');
+            var id = $(this).data('id');
+            $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},1000);
         });
 
 

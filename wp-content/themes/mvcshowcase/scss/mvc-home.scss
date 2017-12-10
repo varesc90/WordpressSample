@@ -102,6 +102,7 @@ img.hovered
   {
     width: 40%;
     padding-left: 20%;
+    float:left;
     li{
       padding: 1em 0;
       font-size:20px;
@@ -109,5 +110,14 @@ img.hovered
   }
   display:none;
   height: 500px;
+  #category_description{
+    float:left;
+    width:40%;
+    .category_preview{
+      display:none;
+    }
+  }
+
+
 
 }

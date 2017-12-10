@@ -136,9 +136,15 @@ img.hovered {
   height: 500px; }
   #dropdown #category_list {
     width: 40%;
-    padding-left: 20%; }
+    padding-left: 20%;
+    float: left; }
     #dropdown #category_list li {
       padding: 1em 0;
       font-size: 20px; }
+  #dropdown #category_description {
+    float: left;
+    width: 40%; }
+    #dropdown #category_description .category_preview {
+      display: none; }
 
 /*# sourceMappingURL=mvc-home.css.map */

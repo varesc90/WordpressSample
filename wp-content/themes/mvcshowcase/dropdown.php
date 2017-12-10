@@ -12,11 +12,15 @@ $categories = get_categories( array(
 <div id="dropdown">
     <ul id="category_list">
 		<?php foreach($categories as $category):?>
-            <li><a data-image="<?php echo get_wp_term_image($category->term_id);?>" href=""><?php echo $category->name;?></a></li>
+            <li><a data-id = <?php echo $category->term_id;?> href=""><?php echo $category->name;?></a></li>
 		<?php endforeach;?>
     </ul>
 
     <div id="category_description">
-        <img src="" />
+	    <?php foreach($categories as $category):?>
+            <div class="category_preview" data-id="<?php echo $category->term_id;?>">
+                <img src="<?php echo get_wp_term_image($category->term_id);?>" alt="Image Not Available"/>
+            </div>
+	    <?php endforeach;?>
     </div>
 </div>
