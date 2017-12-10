@@ -4,9 +4,9 @@ jQuery(document).ready(function($) {
 
     $('.homepage-post').hover(function(){
             $(this).find('img').toggleClass('hovered');
-            $(this).find('.post_title').fadeIn(300);
+            $(this).find('.post_title').animate({width:'toggle'},300);
         },function(){
-        $(this).find('.post_title').fadeOut(300);
+            $(this).find('.post_title').animate({width:'toggle'},300);
             $(this).find('img').toggleClass('hovered');
         }
     );
@@ -37,18 +37,24 @@ jQuery(document).ready(function($) {
 
     $('#category_list a').hover(
         function(){
-                var id = $(this).data('id');
-                $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},350);
+            var id = $(this).data('id');
+            $(this).addClass('hover');
+            $('#category_list a').css('opacity','0.5');
+            $('#category_list a.hover').css('opacity','1');
+            $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},350);
+
         },function(){
             var id = $(this).data('id');
+            $(this).removeClass('hover');
+            $('#category_list a').css('opacity','1');
             $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},0);
         });
 
 
 
 
-function homepageAnimate()
-{
-    $('.site-main').animate({'padding-top':'0em','opacity':'1'});
-}
+    function homepageAnimate()
+    {
+        $('.site-main').animate({'padding-top':'0em','opacity':'1'});
+    }
 });

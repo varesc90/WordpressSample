@@ -78,6 +78,8 @@ li {
     max-width: 100%;
     height: auto; }
   .homepage-post .post_title {
+    white-space: nowrap;
+    overflow: hidden;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -141,6 +143,13 @@ img.hovered {
     #dropdown #category_list li {
       padding: 1em 0;
       font-size: 20px; }
+      #dropdown #category_list li a {
+        font-size: 14px;
+        position: absolute;
+        z-index: 10; }
+        #dropdown #category_list li a label {
+          text-transform: uppercase;
+          font-size: 25px; }
   #dropdown #category_description {
     float: left;
     width: 40%;
@@ -149,7 +158,7 @@ img.hovered {
     #dropdown #category_description .category_preview {
       height: 100%;
       display: none; }
-      #dropdown #category_description .category_preview div {
+      #dropdown #category_description .category_preview .category_thumb {
         height: 100%;
         background-repeat: no-repeat;
         background-position: center; }
@@ -159,7 +168,7 @@ img.hovered {
   width: 100%;
   height: 100%;
   background: white;
-  opacity: 0.7;
+  opacity: 0.5;
   position: absolute;
   top: 0; }
 

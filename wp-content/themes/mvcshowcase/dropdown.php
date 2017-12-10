@@ -12,7 +12,8 @@ $categories = get_categories( array(
 <div id="dropdown">
     <ul id="category_list">
 		<?php foreach($categories as $category):?>
-            <li><a data-id = <?php echo $category->term_id;?> href=""><?php echo $category->name;?></a></li>
+            <li><a class="category_link" data-id = <?php echo $category->term_id;?> href=""><label><?php echo $category->name;?></label>
+                - <?php echo $category->description;?></a></li>
 		<?php endforeach;?>
     </ul>
 
