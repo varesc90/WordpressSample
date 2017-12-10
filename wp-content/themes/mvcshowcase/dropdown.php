@@ -19,7 +19,9 @@ $categories = get_categories( array(
     <div id="category_description">
 	    <?php foreach($categories as $category):?>
             <div class="category_preview" data-id="<?php echo $category->term_id;?>">
-                <img src="<?php echo get_wp_term_image($category->term_id);?>" alt="Image Not Available"/>
+                <div id="filter"></div>
+                <div class="category_thumb" style="background-image: url('<?php echo get_wp_term_image($category->term_id)?>')">
+                </div>
             </div>
 	    <?php endforeach;?>
     </div>

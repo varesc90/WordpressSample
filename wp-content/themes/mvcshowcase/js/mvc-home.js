@@ -38,10 +38,10 @@ jQuery(document).ready(function($) {
     $('#category_list a').hover(
         function(){
                 var id = $(this).data('id');
-                $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},1000);
+                $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},350);
         },function(){
             var id = $(this).data('id');
-            $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},1000);
+            $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},0);
         });
 
 
