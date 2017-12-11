@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lora);
 html {
+  letter-spacing: 2px;
   font-family: 'Lora', serif;
   margin: 0px !important;
-  background-color: #f5f5f5; }
+  background-color: #ffffff; }
   html body {
     padding: 0;
     margin: 0 auto;
@@ -78,6 +79,7 @@ li {
     max-width: 100%;
     height: auto; }
   .homepage-post .post_title {
+    font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
     margin: 0;
@@ -91,39 +93,41 @@ li {
   overflow: auto;
   width: 100%; }
   #home-post-1-container #home-post-1 {
-    max-width: 30%;
-    float: right; }
+    max-width: 50%;
+    float: right;
+    margin-bottom: 5em; }
 
 #home-post-2-container {
   overflow: auto;
   width: 100%; }
   #home-post-2-container #home-post-2 {
-    width: 30%;
-    float: left; }
+    max-width: 50%;
+    float: left;
+    margin-bottom: 5em; }
 
 #home-post-3-container {
   overflow: auto;
-  width: 100%;
-  margin-top: -10em; }
+  width: 100%; }
   #home-post-3-container #home-post-3 {
-    width: 30%;
-    float: right; }
+    max-width: 50%;
+    float: right;
+    margin-bottom: 5em; }
 
 #home-post-4-container {
   overflow: auto;
   width: 100%; }
   #home-post-4-container #home-post-4 {
-    margin: 0em 15em;
-    width: 30%;
-    float: left; }
+    max-width: 50%;
+    float: left;
+    margin-bottom: 5em; }
 
 #home-post-5-container {
   overflow: auto;
-  width: 100%;
-  margin-top: -10em; }
+  width: 100%; }
   #home-post-5-container #home-post-5 {
-    width: 30%;
-    float: right; }
+    max-width: 50%;
+    float: right;
+    margin-bottom: 5em; }
 
 .post_title {
   display: none;

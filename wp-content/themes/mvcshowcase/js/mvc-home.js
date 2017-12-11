@@ -4,9 +4,9 @@ jQuery(document).ready(function($) {
 
     $('.homepage-post').hover(function(){
             $(this).find('img').toggleClass('hovered');
-            $(this).find('.post_title').animate({width:'toggle'},300);
+            $(this).find('.post_title').animate({width:'toggle'},500);
         },function(){
-            $(this).find('.post_title').animate({width:'toggle'},300);
+            $(this).find('.post_title').animate({width:'toggle'},500);
             $(this).find('img').toggleClass('hovered');
         }
     );
@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             $(this).addClass('hover');
             $('#category_list a').css('opacity','0.5');
             $('#category_list a.hover').css('opacity','1');
-            $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},350);
+            $('.category_preview[data-id="'+id+'"]').animate({width:'toggle'},500);
 
         },function(){
             var id = $(this).data('id');
