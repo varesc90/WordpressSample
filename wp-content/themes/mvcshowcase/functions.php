@@ -434,11 +434,10 @@ function add_mvc_styles()
 	add_styles_from_css_folder('mvc-home');
 	wp_enqueue_script( 'mvc-home', get_template_directory_uri() . '/js/mvc-home.js');
     $page_slug = trim( $_SERVER["REQUEST_URI"] , '/' );
-    if($page_slug)
-    {
-        add_styles_from_css_folder('mvc-' . $page_slug);
-    }
+	wp_enqueue_style( 'mvc-home', get_template_directory_uri() . '/css/mvc-home.css',false,'1.1','all');
 	wp_enqueue_style( 'fontawesome-all', get_template_directory_uri() . '/css/fontawesome-all.css',false,'1.1','all');
+
+	wp_enqueue_style( 'mvc-single-page', get_template_directory_uri() . '/css/mvc-single-page.css',false,'1.1','all');
 }
 
 function add_styles_from_css_folder($name)
