@@ -45,11 +45,7 @@ get_header(); ?>
 			endwhile;
 
 			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
+
 
 		// If no content, include the "No posts found" template.
 		else :
@@ -61,5 +57,6 @@ get_header(); ?>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<div id="category_bottom">
+    <h1>Description</h1>
+</div>

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=BioRhyme|Black+Ops+One|Bungee|Bungee+Shade|Creepster|Ewert|Fruktur|Gravitas+One|Monoton|Rubik:900);
 html {
   letter-spacing: 2px;
   font-family: 'Lora', serif;
@@ -29,6 +29,16 @@ li {
 .hidden {
   transition: display 2s;
   display: none !important; }
+
+#filter {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  margin-top: 5em; }
 
 .site-branding {
   z-index: 9999;
@@ -79,6 +89,7 @@ li {
     max-width: 100%;
     height: auto; }
   .homepage-post .post_title {
+    font-family: 'Gravitas One', cursive;
     font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
@@ -166,14 +177,5 @@ img.hovered {
         height: 100%;
         background-repeat: no-repeat;
         background-position: center; }
-
-#filter {
-  /* display: none; */
-  width: 100%;
-  height: 100%;
-  background: white;
-  opacity: 0.5;
-  position: absolute;
-  top: 0; }
 
 /*# sourceMappingURL=mvc-home.css.map */
