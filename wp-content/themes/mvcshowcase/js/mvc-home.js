@@ -1,6 +1,8 @@
 jQuery(document).ready(function($) {
 
-    homepageAnimate();
+    if($('body').hasClass('home')) {
+        homepageAnimate();
+    }
 
     $('.homepage-post').hover(function(){
             $(this).find('img').toggleClass('hovered');
@@ -51,10 +53,26 @@ jQuery(document).ready(function($) {
         });
 
 
+    $(".post_link").on('click',function(e){
+        e.preventDefault();
+        $(this).addClass('selected');
+        $(this).find('.homepage-post').addClass('main-post');
+        var currentPostId = $('.contain_post').data('postid');
+        $('.post_link').each(function(){
+            if(!$(this).hasClass('selected'))
+            {
+                $(this).find('div').animate({opacity:0},500);
+                $(this).animate({height:0},1000);
+
+            }
+        });
+    });
+
+
 
 
     function homepageAnimate()
     {
-        $('.site-main').animate({'padding-top':'0em','opacity':'1'});
+        $('.site-main').animate({'padding-top':'0em','opacity':'1'},1000);
     }
 });

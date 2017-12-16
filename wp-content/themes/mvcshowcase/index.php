@@ -63,19 +63,21 @@ $loop = new WP_Query( $args );
 				$post_index = 1;
 				?>
 				<?php foreach($recent_posts as $post):?>
-                    <a href="<?php echo get_post_permalink($post['ID']); ?>"><div id="home-post-<?php echo $post_index;?>-container">
-                        <div class="homepage-post" id="home-post-<?php echo $post_index;?>">
-	                        <?php echo get_the_post_thumbnail( $post['ID']); ?>
-                            <h2 class="post_title"><?php echo $post['post_title'];?></h2>
+                    <a class="post_link" data-id = "<?php echo $post['ID'];?>" href="<?php echo get_post_permalink($post['ID']); ?>">
+                        <div class="home-post-container" id="home-post-<?php echo $post_index;?>-container">
+                            <div class="homepage-post" id="home-post-<?php echo $post_index;?>">
+								<?php echo get_the_post_thumbnail( $post['ID']); ?>
+                                <h2 class="post_title"><?php echo $post['post_title'];?></h2>
+                            </div>
                         </div>
-                    </div>
+                        <div class="hidden content">
+                            <p><?php echo $post['post_content'];?></p>
+                        </div>
                     </a>
-                    <div class="hidden content">
-                        <p><?php echo $post['post_content'];?></p>
-                    </div>
-				<?php
-                    $post_index++;
-                    endforeach
+
+					<?php
+					$post_index++;
+				endforeach
                 ;?>
                 <!--                // If no content, include the "No posts found" template.-->
 			<?php else :?>
