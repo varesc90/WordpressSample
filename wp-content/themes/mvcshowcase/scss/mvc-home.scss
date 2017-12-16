@@ -1,7 +1,12 @@
 @import 'mvcshowcase';
 @import 'mvc-navbar';
 
-
+.content{
+  display:none;
+  width: 800px;
+  margin: 10% auto;
+  line-height:2em;
+}
 .site-main
 {
   padding-top:30em;
@@ -35,6 +40,7 @@
     margin-right: -50%;
     transform: translate(-50%, -50%)
   }
+
 }
 
 #home-post-1-container {

@@ -77,6 +77,12 @@ li {
 #dropdown {
   clear: both; }
 
+.content {
+  display: none;
+  width: 800px;
+  margin: 10% auto;
+  line-height: 2em; }
+
 .site-main {
   padding-top: 30em;
   opacity: 0; }

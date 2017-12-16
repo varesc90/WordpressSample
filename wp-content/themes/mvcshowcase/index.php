@@ -70,7 +70,7 @@ $loop = new WP_Query( $args );
                                 <h2 class="post_title"><?php echo $post['post_title'];?></h2>
                             </div>
                         </div>
-                        <div class="hidden content">
+                        <div class="content">
                             <p><?php echo $post['post_content'];?></p>
                         </div>
                     </a>
