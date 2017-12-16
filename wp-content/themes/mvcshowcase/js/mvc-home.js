@@ -4,12 +4,16 @@ jQuery(document).ready(function($) {
         homepageAnimate();
     }
 
-    $('.homepage-post').hover(function(){
-            $(this).find('img').toggleClass('hovered');
-            $(this).find('.post_title').animate({width:'toggle'},500);
-        },function(){
-            $(this).find('.post_title').animate({width:'toggle'},500);
-            $(this).find('img').toggleClass('hovered');
+    $('.homepage-post').hover(function() {
+            if (!$(this).hasClass('main-post')) {
+                $(this).find('img').toggleClass('hovered');
+                $(this).find('.post_title').animate({width: 'toggle'}, 500);
+            }
+        },function() {
+            if ($(this).find('img').hasClass('hovered')) {
+                $(this).find('.post_title').animate({width: 'toggle'}, 500);
+                $(this).find('img').toggleClass('hovered');
+            }
         }
     );
 
@@ -54,7 +58,6 @@ jQuery(document).ready(function($) {
 
 
     $(".post_link").on('click',function(e){
-        $("html, body").animate({ scrollTop: 0 }, "slow");
         e.preventDefault();
         $(this).addClass('selected');
         $(this).find('.homepage-post').addClass('main-post');
@@ -65,7 +68,7 @@ jQuery(document).ready(function($) {
                 $(this).find('div').animate({opacity:0},500);
                 $(this).animate({height:0},1000);
             }else{
-                $(this).find('.content').fadeIn('slow');
+                $(this).next().fadeIn('slow');
             }
         });
     });

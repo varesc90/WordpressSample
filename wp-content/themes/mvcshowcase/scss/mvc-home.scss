@@ -29,7 +29,6 @@
 
   }
   .post_title{
-    font-family: 'Gravitas One', cursive;
     font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
@@ -111,7 +110,11 @@
 img.hovered
 {
   transition: opacity 0.5s;
-  opacity:0.1 !important;
+  opacity:0.5 !important;
+}
+
+.site-branding:hover{
+  opacity:0.5;
 }
 
 #dropdown

@@ -13,6 +13,9 @@ a {
   text-decoration: none;
   color: #258efb; }
 
+a:hover {
+  opacity: 0.5; }
+
 li {
   list-style-type: none; }
 
@@ -99,7 +102,6 @@ li {
     max-width: 100%;
     height: auto; }
   .homepage-post .post_title {
-    font-family: 'Gravitas One', cursive;
     font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
@@ -156,7 +158,10 @@ li {
 
 img.hovered {
   transition: opacity 0.5s;
-  opacity: 0.1 !important; }
+  opacity: 0.5 !important; }
+
+.site-branding:hover {
+  opacity: 0.5; }
 
 #dropdown {
   display: none;
