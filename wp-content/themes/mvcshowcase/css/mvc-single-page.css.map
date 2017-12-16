@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,uBACA;EACE,UAAU,EAAC,MAAM;EAEjB,2BAAG;IACD,UAAU,EAAE,KAAK;IACjB,KAAK,EAAE,IAAI;AAGb,sBACA;EACE,OAAO,EAAC,MAAM;AAGhB,kBAAU;EACR,OAAO,EAAE,CAAC;EACV,OAAO,EAAC,CAAC",
+"sources": ["../scss/mvc-single-page.scss"],
+"names": [],
+"file": "mvc-single-page.css"
+}

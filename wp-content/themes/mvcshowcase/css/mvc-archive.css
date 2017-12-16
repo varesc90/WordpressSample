@@ -1,0 +1,19 @@
+.archive #main {
+  padding: 0 10%;
+  float: left; }
+  .archive #main article {
+    float: left;
+    width: 20%;
+    padding: 2.5%; }
+    .archive #main article img {
+      max-width: 100%;
+      height: auto; }
+
+#category_bottom {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 1em;
+  text-align: center; }
+
+/*# sourceMappingURL=mvc-archive.css.map */

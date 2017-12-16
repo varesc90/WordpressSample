@@ -1,0 +1,12 @@
+.single .post-thumbnail {
+  text-align: center; }
+  .single .post-thumbnail img {
+    max-height: 500px;
+    width: auto; }
+.single .entry-content {
+  padding: 0 15em; }
+.single .site-main {
+  opacity: 1;
+  padding: 0; }
+
+/*# sourceMappingURL=mvc-single-page.css.map */
