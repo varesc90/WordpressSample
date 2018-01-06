@@ -14,6 +14,7 @@
 <head>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="description" content="Share What I have learn while working as a Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
