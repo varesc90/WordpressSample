@@ -99,9 +99,8 @@ li {
   margin: 0em 10em;
   position: relative; }
   .homepage-post img {
-    max-height: 500px;
     width: auto;
-  }
+    height: 20em; }
   .homepage-post .post_title {
     font-size: 30px;
     white-space: nowrap;
