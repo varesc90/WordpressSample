@@ -23,6 +23,7 @@ body{
 }
 .homepage-post
 {
+  max-width: 50%;
   cursor:pointer;
   margin: 0em 10em;
   position:relative;
@@ -49,7 +50,6 @@ body{
   overflow: auto;
   width: 100%;
   #home-post-1 {
-    max-width: 50%;
     float:right;
     margin-bottom:5em;
   }
@@ -60,7 +60,6 @@ body{
   width: 100%;
 
   #home-post-2 {
-    max-width: 50%;
     float:left;
     margin-bottom:5em;
   }
@@ -72,7 +71,6 @@ body{
 
   #home-post-3 {
 
-    max-width: 50%;
     float:right;
     margin-bottom:5em;
   }
@@ -84,7 +82,7 @@ body{
 
   #home-post-4 {
 
-    max-width: 50%;
+
     float:left;
     margin-bottom:5em;
   }
@@ -96,7 +94,6 @@ body{
 
   #home-post-5 {
 
-    max-width: 50%;
     float:right;
     margin-bottom:5em;
   }
