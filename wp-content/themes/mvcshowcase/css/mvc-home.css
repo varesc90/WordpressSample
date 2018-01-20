@@ -100,7 +100,7 @@ li {
   position: relative; }
   .homepage-post img {
     width: auto;
-    height: 20em; }
+    max-height: 20em; }
   .homepage-post .post_title {
     font-size: 30px;
     white-space: nowrap;
