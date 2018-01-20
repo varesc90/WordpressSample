@@ -89,7 +89,9 @@ body {
   margin: 10% auto;
   line-height: 2em; }
 
-
+.site-main {
+  padding-top: 30em;
+  opacity: 0; }
 
 .main-post {
   margin: auto !important;
@@ -98,8 +100,7 @@ body {
 .homepage-post {
   cursor: pointer;
   margin: 0em 10em;
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .homepage-post img {
     width: auto;
     max-height: 20em; }

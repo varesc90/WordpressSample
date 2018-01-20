@@ -59,6 +59,7 @@ jQuery(document).ready(function($) {
 
     $(".post_link").on('click',function(e){
         e.preventDefault();
+        $(this).scrollTop();
         $(this).addClass('selected');
         $(this).find('.homepage-post').addClass('main-post');
         var currentPostId = $('.contain_post').data('postid');
