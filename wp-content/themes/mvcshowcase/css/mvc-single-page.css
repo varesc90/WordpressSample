@@ -3,6 +3,9 @@
   .single .post-thumbnail img {
     max-height: 500px;
     width: auto; }
+.single .entry-title {
+  text-align: center;
+  text-decoration: underline; }
 .single .entry-content {
   padding: 0 15em; }
 .single .site-main {

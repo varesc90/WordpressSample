@@ -4,10 +4,16 @@
     padding:0 10%;
     float:left;
     article {
+      -moz-box-shadow:    3px 3px 5px 6px #ccc;
+      -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+      box-shadow:         3px 3px 5px 6px #ccc;
       float:left;
+      border-radius:1px solid #ccc;
       width: 20%;
-      padding:2.5%;
+      margin:2.5%;
       text-align:center;
+      height:15em;
+      padding: 1em 0;
       img {
         max-width: 100%;
         height: auto;
