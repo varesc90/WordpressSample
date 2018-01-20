@@ -12,6 +12,9 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+    <link rel="icon"
+          type="image/png"
+          href="<?php echo site_url()?>/favicon.png">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="description" content="Share What I have learn while working as a Developer">
