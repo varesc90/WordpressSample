@@ -7,11 +7,11 @@ jQuery(document).ready(function($) {
     $('.homepage-post').hover(function() {
             if (!$(this).hasClass('main-post')) {
                 $(this).find('img').toggleClass('hovered');
-                $(this).find('.post_title').animate({width: 'toggle'}, 500);
+                $(this).find('.post_title').fadeIn('fast');
             }
         },function() {
             if ($(this).find('img').hasClass('hovered')) {
-                $(this).find('.post_title').animate({width: 'toggle'}, 500);
+                $(this).find('.post_title').fadeOut('fast');
                 $(this).find('img').toggleClass('hovered');
             }
         }

@@ -1,6 +1,9 @@
 @import 'mvcshowcase';
 @import 'mvc-navbar';
 
+body{
+  color:#0D47A1;
+}
 .content{
   display:none;
   width: 800px;
@@ -23,6 +26,7 @@
   cursor:pointer;
   margin: 0em 10em;
   position:relative;
+  text-align: center;
   img{
     width:auto;
     max-height: 20em;

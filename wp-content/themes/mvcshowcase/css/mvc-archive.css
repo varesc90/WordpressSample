@@ -8,6 +8,8 @@
     .archive #main article img {
       max-width: 100%;
       height: auto; }
+    .archive #main article p {
+      text-align: center; }
 
 #category_bottom {
   position: fixed;

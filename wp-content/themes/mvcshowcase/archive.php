@@ -57,6 +57,3 @@ get_header(); ?>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
-<div id="category_bottom">
-    <h1>Description</h1>
-</div>
