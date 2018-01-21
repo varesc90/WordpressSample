@@ -1,8 +1,11 @@
+
+
+
 jQuery(document).ready(function($) {
 
-    if($('body').hasClass('home')) {
+    $('body').fadeIn('slow');
+
         homepageAnimate();
-    }
 
     $('.homepage-post').hover(function() {
             if (!$(this).hasClass('main-post')) {
@@ -58,7 +61,7 @@ jQuery(document).ready(function($) {
 
 
     $(".post_link").on('click',function(e){
-        e.preventDefault();
+        $('body').fadeOut('slow');
         $(this).scrollTop();
         $(this).addClass('selected');
         $(this).find('.homepage-post').addClass('main-post');

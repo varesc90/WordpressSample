@@ -5,9 +5,13 @@ html {
   margin: 0px !important;
   background-color: #ffffff; }
   html body {
+    display: none;
     padding: 0;
     margin: 0 auto;
     background: #ffffff; }
+  html body.fade-out {
+    opacity: 0;
+    transition: 1s opacity; }
 
 a {
   text-decoration: none;
@@ -98,6 +102,7 @@ body {
   float: none !important; }
 
 .homepage-post {
+  text-align: center;
   max-width: 50%;
   cursor: pointer;
   margin: 0em 10em;

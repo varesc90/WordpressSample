@@ -71,10 +71,6 @@ $loop = new WP_Query( $args );
                             </div>
                         </div>
                     </a>
-                    <div class="content">
-                        <p><?php echo $post['post_content'];?></p>
-                    </div>
-
 					<?php
 					$post_index++;
 				endforeach
