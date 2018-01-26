@@ -150,7 +150,6 @@ body {
     margin-bottom: 5em; }
 
 #home-post-5-container {
-  overflow: auto;
   width: 100%; }
   #home-post-5-container #home-post-5 {
     float: right;
@@ -211,6 +210,14 @@ img.hovered {
       div.home-post-container div.homepage-post img {
         max-height: unset;
         height: auto;
-        width: 100%; } }
+        width: 100%; }
+
+  #dropdown ul#category_list li a {
+    position: static; }
+
+  #dropdown ul#category_list {
+    width: 100%;
+    text-align: center;
+    padding: 0px; } }
 
 /*# sourceMappingURL=mvc-home.css.map */

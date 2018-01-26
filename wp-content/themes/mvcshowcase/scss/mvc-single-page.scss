@@ -1,15 +1,15 @@
 .single{
 
 
-.post-thumbnail
-{
-  text-align:center;
+  .post-thumbnail
+  {
+    text-align:center;
 
-  img{
-    max-height: 500px;
-    width: auto;
+    img{
+      max-height: 500px;
+      width: auto;
+    }
   }
-}
 
   .entry-title
   {
@@ -31,4 +31,10 @@
 
 
 
+}
+@media only screen
+and (min-device-width: 360px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  @import 'mobile/mvc-single-page-mobile';
 }
