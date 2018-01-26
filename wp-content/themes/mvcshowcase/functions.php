@@ -46,6 +46,7 @@ if ( ! function_exists( 'twentysixteen_setup' ) ) :
  */
 function twentysixteen_setup() {
 
+	wp_enqueue_script( 'slides', get_template_directory_uri() . '/js/jquery-3.3.1.min.js');
 	wp_enqueue_script( 'slides', get_template_directory_uri() . '/js/jquery.slides.min.js');
 	add_action( 'init', 'create_post_type' );
 	/*
