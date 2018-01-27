@@ -21,6 +21,11 @@ body{
   margin:auto !important;
   float:none !important;
 }
+
+.home-post-container
+{
+  overflow: hidden;
+}
 .homepage-post
 {
   text-align:center;
@@ -48,7 +53,6 @@ body{
 }
 
 #home-post-1-container {
-  overflow: auto;
   width: 100%;
   #home-post-1 {
     float:right;
@@ -57,7 +61,6 @@ body{
 }
 
 #home-post-2-container {
-  overflow: auto;
   width: 100%;
 
   #home-post-2 {
@@ -67,7 +70,6 @@ body{
 }
 
 #home-post-3-container {
-  overflow: auto;
   width: 100%;
 
   #home-post-3 {
@@ -78,7 +80,6 @@ body{
 }
 
 #home-post-4-container {
-  overflow: auto;
   width: 100%;
 
   #home-post-4 {

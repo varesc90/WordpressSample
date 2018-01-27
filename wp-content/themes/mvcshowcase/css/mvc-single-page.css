@@ -22,6 +22,14 @@
 
   div.right-nav {
     float: right;
-    margin-top: 0em; } }
+    margin-top: 0em; }
+
+  .entry-content {
+    width: 100%; }
+    .entry-content table {
+      width: inherit; }
+    .entry-content pre {
+      white-space: pre-wrap;
+      width: inherit; } }
 
 /*# sourceMappingURL=mvc-single-page.css.map */

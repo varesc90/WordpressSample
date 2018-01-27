@@ -12,3 +12,15 @@ div.right-nav {
   float: right;
   margin-top: 0em;
 }
+
+.entry-content
+{
+  width:100%;
+  table{
+    width:inherit;
+  }
+  pre{
+    white-space: pre-wrap;
+    width:inherit;
+  }
+}
