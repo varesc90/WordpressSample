@@ -10,7 +10,6 @@
 
 div.right-nav {
   float: right;
-  margin-top: 0em;
 }
 
 .entry-content
@@ -20,6 +19,9 @@ div.right-nav {
     width:inherit;
   }
   pre{
+    code{
+      word-wrap:break-word;
+    }
     white-space: pre-wrap;
     width:inherit;
   }

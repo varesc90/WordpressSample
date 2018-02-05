@@ -21,8 +21,7 @@
     padding: 0; }
 
   div.right-nav {
-    float: right;
-    margin-top: 0em; }
+    float: right; }
 
   .entry-content {
     width: 100%; }
@@ -30,6 +29,8 @@
       width: inherit; }
     .entry-content pre {
       white-space: pre-wrap;
-      width: inherit; } }
+      width: inherit; }
+      .entry-content pre code {
+        word-wrap: break-word; } }
 
 /*# sourceMappingURL=mvc-single-page.css.map */
