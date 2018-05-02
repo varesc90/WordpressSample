@@ -111,7 +111,7 @@ body {
   margin: 0em 10em;
   position: relative; }
   .homepage-post img {
-    width: auto;
+    width: 100%;
     max-height: 20em; }
   .homepage-post .post_title {
     font-size: 30px;

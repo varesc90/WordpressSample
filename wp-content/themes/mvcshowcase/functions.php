@@ -127,8 +127,10 @@ function twentysixteen_setup() {
 	 * specifically font, colors, icons, and column width.
 	 */
 	add_editor_style( array( 'css/editor-style.css', twentysixteen_fonts_url() ) );
-	add_mvc_styles();
-	add_action('admin_enqueue_scripts', 'add_customized_admin_style');
+	if( !is_admin() ) {
+		add_mvc_styles();
+		add_action( 'admin_enqueue_scripts', 'add_customized_admin_style' );
+	}
 	// Indicate widget sidebars can use selective refresh in the Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
@@ -456,20 +458,20 @@ function add_customized_admin_style()
 
 function create_posttype() {
 
-	register_post_type( 'Homepage Post',
+	register_post_type( 'Folio',
 		// CPT Options
 		array(
-			'labels' => array(
-				'name' => __( 'Homepage Posts' ),
-				'singular_name' => __( 'Homepage Post' )
+			'labels'      => array(
+				'name'          => __( 'Folios' ),
+				'singular_name' => __( 'Folio' )
 			),
-			'public' => true,
+			'public'      => true,
 			'has_archive' => true,
-			'rewrite' => array('slug' => 'homepage_post'),
+			'rewrite'     => array( 'slug' => 'folio' ),
 		)
 	);
-}
 
+}
 add_action( 'init', 'create_posttype' );
 
 
